@@ -1,4 +1,7 @@
 added frist year project to git
+back to the original repository:
+https://github.com/PIXELZIAN/DnD-Retailer
+
 # DnD-Retailer
 Author: Eoin Ocathasaigh, Cian Dicker-Hughes, Darragh Mulvihill
 
