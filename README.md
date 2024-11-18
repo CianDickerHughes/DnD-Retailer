@@ -1,3 +1,4 @@
+added frist year project to git
 # DnD-Retailer
 Author: Eoin Ocathasaigh, Cian Dicker-Hughes, Darragh Mulvihill
 
