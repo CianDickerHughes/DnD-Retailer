@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Author: Eoin Ocathasaigh, Cian Dicker-Hughes, Darragh Mulvihill -->
+<!-- Takes the users saved info and calculates their total and allows them to checkout -->
+<html lang = 'en'>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!-- viewport -->
+	<title>DnD Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/DnD-Symbol.png">
+    <link rel="stylesheet" href="css/NavBarCSS.css">
+	<link href="css/CartCss.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-5 border-danger"> <!-- navbar and links to other pages-->
+        <div class="container">
+            <a class="navbar-brand" href="HomePage.html"><img src="img/DnD-Symbol.png" class ="navbarImg"></a><!--DnD Logo-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="HomePage.html">Home</a><!--Home page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="ShopPage.html">Shop</a><!--Cart page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-decoration-underline" href="CartPage.html">Cart</a><!--Cart page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="AboutUsPage.html">About Us</a><!--About us page-->
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto" id="username">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark bg-white border border-light rounded hoverText" href="SignInPage.html">Sign In</a><!--Sign In page-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="myHeading text-white">Your Cart</h1>
+	
+	<div class="contOne">
+			<div id="box2">
+				<table>
+					<tr>
+						<th>#</th>
+						<th>Product </th>
+						<th>Cost</th>
+						<th>Quantity ordered</th>
+						<th>Total(€)</th>
+					</tr>
+					<tr>
+						<td>1.</td>
+						<td>Dice set </td>
+						<td>8.99</td>
+						<td id="qty1">2</td>
+						<td id="total1">10</td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td>Dice Mat </td>
+						<td>11.99</td>
+						<td id="qty2">1</td>
+						<td id="total2">50</td>
+					</tr>
+					<tr>
+						<td>3.</td>
+						<td>Essentials Kit </td>
+						<td>19.99</td>
+						<td id="qty3">1</td>
+						<td id="total3">50</td>
+					</tr>
+					<tr>
+						<td>4.</td>
+						<td>Dice Bag </td>
+						<td>11.99</td>
+						<td id="qty4">1</td>
+						<td id="total4">50</td>
+					</tr>
+					<tr id="discount">
+						<td colspan="5">Get 10% Discount by Sign In. Click <a href="SignInPage.html">Here</a> to Sign In</td>
+					<tr>
+						<th colspan="4">Total Cost(€)</th>
+						<th id="total">60</th>
+					</tr>						
+				</table><br>
+				<a class="text-center" href="CheckoutPage.html"><!-- button for the Checkout -->
+                    <button type="button" class=" border border-secondary bg-dark rounded-4 p-1 text-white text-center h4 w-50 opacity-100">Checkout</button>
+                </a>
+			</div>
+		</div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/NavBarJs.js"></script>
+    <script src="js/CartJs.js"></script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Author: Eoin Ocathasaigh, Cian Dicker-Hughes, Darragh Mulvihill -->
+<!-- This page will allow the user to browse the various items on the shop and will allow them to select the amount of items they wish to purchase -->
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!-- viewport -->
+	<title>DnD Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/DnD-Symbol.png">
+    <link rel="stylesheet" href="css/NavBarCSS.css">
+	<link href="css/ShopCss.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-5 border-danger"> <!-- navbar and links to other pages-->
+        <div class="container">
+            <a class="navbar-brand" href="HomePage.html"><img src="img/DnD-Symbol.png" class ="navbarImg"></a><!--DnD Logo-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="HomePage.html">Home</a><!--Home page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-decoration-underline" href="ShopPage.html">Shop</a><!--Cart page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="CartPage.html">Cart</a><!--Cart page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="AboutUsPage.html">About Us</a><!--About us page-->
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto" id="username">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark bg-white border border-light rounded hoverText" href="SignInPage.html">Sign In</a><!--Sign In page-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+		
+		<h1 class="myHeading1 text-center text-white">Items</h1>
+		<div class="container2">
+			<table>
+				<tr>
+					<td style="padding: 20px;">
+						<div id="box2">
+							<img src="img/WeaponDiceHollowMetal.jpg" alt="Dice Image" class="img-thumbnail border border-dark myImage1"><br> <!--item 1 Dice set -->
+							<b>Standard Dice:</b> $8.99<br>
+							How many die would you like to order?<br>
+							Qty: <input id="qty1"><br><br>
+							<button id="button1" onclick="add(1)">Add to cart</button>					
+						</div>
+					</td>
+					<td>
+						<div id="box3">
+							<br><img src="img/diceMat.jpg" alt="Dice Mat Image" class="img-thumbnail border border-dark myImage2"><br> <!--item 2 Dice Mat -->
+							<b>Dice Mat:</b> $11.99<br>
+							How many would you like to order?<br>
+							Qty: <input id="qty2"><br><br>
+							<button id="button2" onclick="add(2)">Add to cart</button>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td style="padding: 20px;">
+						<img src="img/starterKit.jpg" alt="Essentials Kit Image" class="img-thumbnail border border-dark myImage3"><br>  <!--item 3 Essentials Kit -->
+							<b>Essentials Kit:</b> $19.99<br>
+							How many would you like to order?<br>
+							Qty: <input id="qty3"><br><br>
+							<button id="button3" onclick="add(3)">Add to cart</button>		
+					</td>
+					<td>
+						<br><img src="img/diceBag.jpg" alt="Dice Bag Image" class="img-thumbnail border border-dark myImage4"><br>  <!--item 4 Dice Bag -->
+							<b>Dice Bag:</b> $11.99<br>
+							How many would you like to order?<br>
+							Qty: <input id="qty4"><br><br>
+							<button id="button4" onclick="add(4)">Add to cart</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br> <p></p>
+</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/NavBarJs.js"></script>
+    <script src="js/ShopJs.js"></script>
+</html>

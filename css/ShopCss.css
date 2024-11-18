@@ -1,0 +1,32 @@
+/*Stylesheet for Shop page
+Author: Eoin Ocathasaigh & Darragh Mulvihill*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+
+body {
+	background-image: url('../img/shop.jpg'); 
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-size: cover;
+	}
+td {
+	padding-right: 20px;
+	vertical-align: top;
+}
+.container2{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 4px;
+			width: 450px;
+			margin-top: 20px;
+			text-align: center;
+			margin: auto;
+			background-color: white;
+			opacity: 85%;
+			border-radius: 5px;
+		}	
+		
+.myImage1, .myImage2, .myImage3, .myImage4 {height: 150px; width: 200px;}
+
+.myHeading1{font-family: 'Alkatra', cursive;}

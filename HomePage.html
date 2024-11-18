@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Author: Eoin Ocathasaigh, Cian Dicker-Hughes, Darragh Mulvihill -->
+<!-- The main page which will allow the user to access the other pages quickly -->
+<html lang = 'en'>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /><!-- viewport -->
+	<title>DnD Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/DnD-Symbol.png"> <!-- DnD Logo on tab -->
+    <link rel="stylesheet" href="css/NavBarCSS.css">
+    <link rel="stylesheet" href="css/HomeCss.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-5 border-danger"> <!-- navbar and links to other pages-->
+        <div class="container">
+            <a class="navbar-brand" href="HomePage.html"><img src="img/DnD-Symbol.png" class ="navbarImg"></a><!-- DnD Logo -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white text-decoration-underline" href="HomePage.html">Home</a><!-- Home page -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="ShopPage.html">Shop</a><!-- Cart page -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="CartPage.html">Cart</a><!-- Cart page -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="AboutUsPage.html">About Us</a><!-- About us page -->
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto" id="username">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark bg-white border border-light rounded hoverText" href="SignInPage.html" >Sign In</a><!-- Sign In page -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Display few images and links -->
+    <div class="container">
+        <div class="row g-2">
+            <div id="carouselExampleAutoplaying" class="carousel slide col-lg-12 col-md-12 col-sm-12 w-100 boxContainer" data-bs-ride="carousel">
+                <div class="carousel-inner mt-2 border border-5 border-dark rounded bg-dark">
+                    <div class="carousel-item active">
+                        <img src="img/slideImg1.png" class="d-block slideImg" alt="DnDPlayersHandbook">
+                    </div>
+                    <div class="carousel-item row g-2">
+                        <img src="img/slideImg2.png" class="d-block slideImg" alt="WeaponDiceHollowMetal">
+                    </div>
+                    <div class="carousel-item row g-2">
+                        <img src="img/slideImg3.png" class="d-block slideImg" alt="DnDMonsterManualBook">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+             <!-- information about DnD -->  
+			<div class="col-lg-6 col-md-6 col-sm-12 boxContainer">
+				<div class="background"> 	
+					<h2 class="text-center" id="headingOne">What is Dungeons & Dragons</h2>
+					<p>Dungeons & Dragons <b>(DND)</b>is a structured yet open-ended role-playing game. It is normally played indoors with the participants seated around a tabletop. Typically, one player takes on the role of Dungeon Master <b>(DM)</b> while the others each control a single character, representing an individual in a fictional setting. When working together as a group, the player characters <b>(PCs)</b> are often described as a "party" of adventurers, with each member often having their own area of specialty which contributes to the success of the whole. During the course of play, each player directs the actions of their character and their interactions with other characters in the game. This activity is performed through the verbal impersonation of the characters by the players, while employing a variety of social and other useful cognitive skills, such as logic, basic mathematics and imagination. A game often continues over a series of meetings to complete a single adventure, and longer into a series of related gaming adventures, called a "campaign".</p>
+					<p>The most recent versions of the game's rules are detailed in three core rulebooks: The Player's Handbook, the Dungeon Master's Guide and the Monster Manual.</p>
+					<p>The only items required to play the game are the rulebooks, a character sheet for each player, and a number of polyhedral dice. Many players also use miniature figures on a grid map as a visual aid if desired, particularly during combat. Some editions of the game presume such usage. Many optional accessories are available to enhance the game, such as expansion rulebooks, pre-designed adventures and various campaign settings.</p>
+					<p>To read more click <a class="hoverText decorateLinks text-primary" href="https://en.wikipedia.org/wiki/Dungeons_%26_Dragons#:~:text=Dungeons%20%26%20Dragons%20is%20a%20structured,individual%20in%20a%20fictional%20setting.">here</a>.</p>
+                    <br> <p></p>
+				</div>
+			</div>
+            <!-- Display box of links to other pages e.g. shop, cart, aboutUs and signIn -->
+            <div class="col-lg-6 col-md-6 col-sm-12 boxContainer grid-container bg-dark">  <!--id="greaterContainer"-->
+                <div class="grid" id="containerOne">
+                    <h2><a href="ShopPage.html" class="decorateLinks">Shop</a></h2>
+                    <h4 class="decorate">Have a look of<br>our Products</h4>
+                </div>
+
+                <div class="grid" id="containerOne">
+                    <h2><a href="CartPage.html" class="decorateLinks">Cart</a></h2>
+                    <h4 class="decorate">Look over your<br>Cart and<br>Checkout</h4>
+                </div>
+                
+                <div class="grid" id="containerOne">
+                    <h2><a href="AboutUsPage.html" class="decorateLinks">About Us</a></h2>
+                    <h4 class="decorate">Learn About Us</h4>
+                </div>
+
+                <div class="grid" id="containerOne">
+                    <h2><a href="SignInPage.html" class="decorateLinks">Sign In</a></h2>
+                    <h4 class="decorate">Sign In to get a<br>10% Discount</h4>
+                </div>
+            </div>  
+        </div>  
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="js/NavBarJs.js"></script>
+    <script src="js/HomeJs.js"></script>
+</html>

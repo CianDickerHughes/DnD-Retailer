@@ -1,0 +1,39 @@
+/* Stylesheet for the Checkout Page
+Author: Cian Hughes, Eoin Ocathasaigh, Darragh Mulvihill*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+		body {
+			background-image: url('../img/BackgroundDnD2.jpg'); 
+			background-repeat: no-repeat; 
+			background-attachment: fixed; 
+			background-size: cover;
+		}
+
+		.myHeading{
+			text-align: center;
+			font-family: 'Alkatra', cursive;
+		}
+
+		.contOne{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 4px;
+			width: 600px;
+			margin-top: 20px;
+			margin: auto;
+		}	
+
+		.box1{
+			background-color: white;
+			opacity: 85%;
+			padding: 10px;
+		}
+
+		div{border-radius: 5px;}
+
+		hr.solid {
+			border-top: 5px solid #bbb;
+		  }
+
+		.completebutton:hover {text-decoration: underline;}

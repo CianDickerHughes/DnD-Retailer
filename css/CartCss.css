@@ -1,0 +1,58 @@
+/* Stylesheet for the Cart Page
+Author: Eoin Ocathasaigh, Cian Hughes, Darragh Mulvihill*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+		body {
+			background-image: url('../img/BackgroundDnD2.jpg'); 
+			background-repeat: no-repeat; 
+			background-attachment: fixed; 
+			background-size: cover;
+		}
+		
+		button:hover {
+			text-decoration: underline;
+		}
+			
+		.contOne{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 4px;
+			width: 450px;
+			margin-top: 20px;
+			text-align: center;
+			margin: auto;
+		}	
+		
+		.myHeading{
+			text-align: center;
+			font-family: 'Alkatra', cursive;
+		}
+		
+		#box1{
+			padding: 15px;
+			text-align: center;
+		}
+		#box2{
+			background-color: white;
+			opacity: 85%;
+			text-align: center;
+		}
+		#box1, #box2{padding: 15px;}
+		div{border-radius: 5px;}
+
+		a{
+			/*color: white;		
+			padding: 10px;*/
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+
+		table, tr, th, td{
+			border: 2px solid black; 
+			border-collapse: collapse;
+		}
+		th, td {padding: 5px;}
+		table{margin: auto;}

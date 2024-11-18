@@ -1,0 +1,30 @@
+/* Author:Cian Hughes & Eoin Ocathasaigh & Darragh Mulvihill*/
+/* Stylesheet for the homepage */
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+body {
+		background-image: url('../img/dragon2.jpg'); 
+		background-repeat: no-repeat; 
+		background-attachment: fixed; 
+		background-size: cover;
+		}
+		
+
+.boxContainer {display: block; margin-left: auto; margin-right: auto; width: 640px; height: auto;}
+
+.background {background-color: white; opacity: 80%; border-radius: 5px;}
+
+.slideImg {display: block; margin-left: auto; margin-right: auto; height: 400px; width: auto;}
+
+.grid-container {display: grid; grid-template-columns: auto auto; text-align: center; border-radius: 5px;}
+
+.grid {border-style: solid; border-width: 2px; margin: 5px;}
+
+.decorate{color: black;}
+.decorateLinks{text-decoration: none; color: black;}
+.decorateLinks:hover{text-decoration: underline; color: black;}
+
+#headingOne{font-family: 'Alkatra', cursive;}
+
+#containerOne{background-color: darkred;}
